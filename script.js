@@ -18,7 +18,7 @@ function clock() {
 
     if(hours >= 12) {
         meridiem.innerText = 'PM';
-        hours -= 12;
+        hours = (hours-12).toString().padStart(2,0);
     } else {
         meridiem.innerText = 'AM';
     }
